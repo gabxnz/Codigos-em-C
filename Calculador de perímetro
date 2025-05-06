@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+float lado, perimetro;
+perimetro = 0;
+printf("Digite o valor do primeiro lado do triangulo \n");
+scanf("%f", &lado);
+perimetro = lado;
+printf("Digite o valor do segundo lado do triangulo \n");
+scanf("%f", &lado);
+perimetro = perimetro + lado;
+printf("Digite o valor do terceiro lado do triangulo \n");
+scanf("%f", &lado);
+perimetro = perimetro + lado;
+printf("Perimetro: %.4f", perimetro);
+return 0;
+}
