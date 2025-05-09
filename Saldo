@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+float saldo, valor;
+int i;
+printf("Digite o saldo inicial da conta:\n");
+scanf("%f", &saldo);
+printf("Digite o valor do salario:\n");
+scanf("%f", &valor);
+saldo += valor;
+printf("Saldo apos deposito do salario: %.2f\n", saldo);
+for(i = 1; i <= 3; i++) {
+printf("Digite o valor da retirada %d:\n ", i);
+scanf("%f", &valor);
+if(valor <= saldo) {
+saldo -= valor;
+printf("Saldo apos retirada %d: %.2f\n", i, saldo);
+} else {
+printf("Saldo insuficiente para a retirada %d!\n", i);
+}
+}
+printf("Saldo final da conta: %.2f\n", saldo);
+return 0;
+}
