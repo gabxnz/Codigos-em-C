@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+int horas, minutos, segundos;
+printf("Digite os segundos\n");
+scanf("%d", &segundos);
+minutos = (segundos/60);
+horas = (minutos/60);
+printf("Foram: %dhoras\n%d minutos\n%d segundos\n", horas, minutos, segundos);
+return 0;
+}
