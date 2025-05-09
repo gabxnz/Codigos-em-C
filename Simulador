@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+int matricula, dia, hora;
+printf("Digite a matricula do funcionario (1 a 30): \n");
+scanf("%d", &matricula);
+if (matricula < 1 || matricula > 30) {
+printf("Matricula invalida.\n");
+return 0;
+}
+dia = (matricula - 1) / 7 + 1;
+hora = (matricula - 1) % 7 + 8;
+printf("Dia da consulta: %dª-feira as %d:00 horas.\n", dia + 1, hora);
+return 0;
+}
