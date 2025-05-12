@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+int salario1, salario2, total;
+int n100, n50, n20, n10, n5;
+printf("Digite o valor do salario da empregada: ");
+scanf("%d", &salario1);
+printf("Digite o valor do salario da baba: ");
+scanf("%d", &salario2);
+total = salario1 + salario2;
+n100 = total / 100;
+total = total % 100;
+n50 = total / 50;
+total = total % 50;
+n20 = total / 20;
+total = total % 20;
+n10 = total / 10;
+total = total % 10;
+n5 = total / 5;
+total = total % 5;
+printf("Notas necessarias:\n");
+printf("%d x R$ 100\n", n100);
+printf("%d x R$ 50\n", n50);
+printf("%d x R$ 20\n", n20);
+printf("%d x R$ 10\n", n10);
+printf("%d x R$ 5\n", n5);
+if (total > 0) {
+printf("Nao e possivel pagar exatamente sem usar moedas ou notas de R$ 2,00.\n");
+}
+return 0;
+}
