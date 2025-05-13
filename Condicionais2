@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+    float notacreche;
+    char nomecrianca[10];
+int main()
+{
+
+    printf("avalie a creche\n");
+    scanf("%f", &notacreche);
+
+    if (notacreche <= 5){
+        printf ("hard ne\n");
+        printf(" qual crianca merece bicuda?\n");
+        scanf("%s", &nomecrianca);
+        printf("vdd o %s merece porrada mesmo", &nomecrianca);
+    } else {
+        printf ("ah so");
+    }
+    return 0;
+}
+
