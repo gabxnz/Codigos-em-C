@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    float nota, notab;
+    int jrl;
+
+    printf("digite uma nota pro brawl\n");
+    scanf("%f", &nota);
+
+    if (nota < 5) {
+        printf("\n po ai nao \n");
+    } else {
+        printf("\n ok \n");
+    }
+
+    printf("conhece rocket league?\n digite 0 para nao e 1 para sim\n");
+    scanf("%d", &jrl);
+
+    if (jrl == 1) {
+        printf("qual nota vc da?\n");
+        scanf("%f", &notab);
+    }
+
+    return 0;
+}
