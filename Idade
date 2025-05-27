@@ -1,0 +1,28 @@
+int mapa_idade(int age);
+int main()
+{
+    int idade;
+    printf("Digite sua idade(numero inteiro)\n");
+    scanf("%d", &idade);
+    mapa_idade(idade);
+}
+
+int mapa_idade(int age)
+{
+    if (age < 13)
+    {
+        printf("Voce e crianca");
+    }
+    else if (age >= 13 && age < 20)
+    {
+        printf("Voce e adolescente");
+    }
+    else if (age >= 20 && age < 65)
+    {
+        printf("Voce e adulto");
+    }
+    else if (age >= 65)
+    {
+         printf("Voce e idoso");
+    }
+}
