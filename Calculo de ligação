@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+float valor_ligacao (int pref);
+float valor_total (int duracao, float valor);
+int main()
+{
+    int prefixo;
+    int minutos;
+    float val_por_minuto, valor_ligacao_usuario;
+
+    printf("Digite o prefixo da ligacao\n");
+    scanf("%d", &prefixo);
+    val_por_minuto = valor_ligacao(prefixo);
+
+    printf("O valor por minuto e: %.4f\n", val_por_minuto);
+
+    printf("Digite a duracao da ligacao em minutos\n");
+    scanf("%d", &minutos);
+
+    valor_ligacao_usuario = valor_total(minutos, val_por_minuto);
+    printf("O valor da ligacacao e: %.4f \n", valor_ligacao_usuario);
+}
+
+float valor_ligacao (int pref)
+{
+    float preco_minuto;
+    if (pref == 54 || pref == 598 || 595 == pref || pref == 56 ){
+        preco_minuto = 2.00;
+    }
+    else if (pref == 1)
+    {
+        preco_minuto = 2.10;
+    }
+    else
+    {
+        preco_minuto = 2.30;
+    }
+    return preco_minuto;
+}
+
+float valor_total(int duracao, float valor)
+{
+    float val;
+    val = duracao*valor;
+    return val;
+}
