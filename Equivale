@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+int a, b;
+int main()
+{
+printf("Digite dois numero \n");
+scanf ("%d", &a);
+scanf ("%d", &b);
+
+while (a < b){
+    a += 1;
+printf("%d\n",a);
+}
+return 0;
+}
